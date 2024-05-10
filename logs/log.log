@@ -1,0 +1,48 @@
+2024-05-10T09:44:22.716+02:00  INFO 60444 --- [main] d.a.g.ShopProjectSpringBootApplication   : Starting ShopProjectSpringBootApplication using Java 17.0.10 with PID 60444 (/Users/vasilib/IdeaProjects/g_37_jp_shop/target/classes started by vasilib in /Users/vasilib/IdeaProjects/g_37_jp_shop)
+2024-05-10T09:44:22.728+02:00  INFO 60444 --- [main] d.a.g.ShopProjectSpringBootApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-10T09:44:24.008+02:00  INFO 60444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-10T09:44:24.133+02:00  INFO 60444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 4 JPA repository interfaces.
+2024-05-10T09:44:25.311+02:00  INFO 60444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-10T09:44:25.334+02:00  INFO 60444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-10T09:44:25.335+02:00  INFO 60444 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-10T09:44:25.437+02:00  INFO 60444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-10T09:44:25.438+02:00  INFO 60444 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2632 ms
+2024-05-10T09:44:25.636+02:00  INFO 60444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-10T09:44:25.828+02:00  INFO 60444 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e98b788
+2024-05-10T09:44:25.832+02:00  INFO 60444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-10T09:44:26.309+02:00  INFO 60444 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-10T09:44:28.021+02:00  INFO 60444 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T09:44:28.176+02:00  INFO 60444 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-10T09:44:28.199+02:00  INFO 60444 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-10T09:44:28.200+02:00  INFO 60444 --- [main] liquibase.util                           : Run:                          0
+2024-05-10T09:44:28.200+02:00  INFO 60444 --- [main] liquibase.util                           : Previously run:              21
+2024-05-10T09:44:28.200+02:00  INFO 60444 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-10T09:44:28.200+02:00  INFO 60444 --- [main] liquibase.util                           : -------------------------------
+2024-05-10T09:44:28.201+02:00  INFO 60444 --- [main] liquibase.util                           : Total change sets:           21
+2024-05-10T09:44:28.201+02:00  INFO 60444 --- [main] liquibase.util                           : Update summary generated
+2024-05-10T09:44:28.240+02:00  INFO 60444 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-10T09:44:28.262+02:00  INFO 60444 --- [main] liquibase.command                        : Command execution complete
+2024-05-10T09:44:28.461+02:00  INFO 60444 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-10T09:44:28.566+02:00  INFO 60444 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-10T09:44:28.621+02:00  INFO 60444 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-10T09:44:28.997+02:00  INFO 60444 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-10T09:44:30.791+02:00  INFO 60444 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-10T09:44:30.795+02:00  INFO 60444 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T09:44:31.560+02:00  WARN 60444 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-10T09:44:32.129+02:00  INFO 60444 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a7473b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10d77866, org.springframework.security.web.context.SecurityContextHolderFilter@323e4f13, org.springframework.security.web.header.HeaderWriterFilter@4006d0cb, org.springframework.web.filter.CorsFilter@15ddb82a, org.springframework.security.web.authentication.logout.LogoutFilter@4f45ed22, de.aittr.g_37_jp_shop.security.sec_filter.TokenFilter@32241504, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d1c2fe7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b98f595, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54c659a1, org.springframework.security.web.session.SessionManagementFilter@5f4452bb, org.springframework.security.web.access.ExceptionTranslationFilter@51c8a421, org.springframework.security.web.access.intercept.AuthorizationFilter@1923858b]
+2024-05-10T09:44:32.576+02:00  INFO 60444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-10T09:44:32.596+02:00  INFO 60444 --- [main] d.a.g.ShopProjectSpringBootApplication   : Started ShopProjectSpringBootApplication in 11.12 seconds (process running for 12.223)
+2024-05-10T09:44:38.725+02:00  INFO 60444 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-10T09:44:38.726+02:00  INFO 60444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-10T09:44:38.729+02:00  INFO 60444 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-10T09:44:39.242+02:00  WARN 60444 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2024-05-10T09:44:47.046+02:00  INFO 60444 --- [http-nio-8080-exec-3] d.a.g_37_jp_shop.logging.AspectLogging   : Method save of the class ProductServiceImpl called
+2024-05-10T09:44:47.109+02:00  INFO 60444 --- [http-nio-8080-exec-3] d.a.g_37_jp_shop.logging.AspectLogging   : Method save of the class ProductServiceImpl finished its work
+2024-05-10T09:44:57.132+02:00  INFO 60444 --- [http-nio-8080-exec-5] d.a.g_37_jp_shop.logging.AspectLogging   : Method save of the class ProductServiceImpl called
+2024-05-10T09:44:57.136+02:00  INFO 60444 --- [http-nio-8080-exec-5] d.a.g_37_jp_shop.logging.AspectLogging   : Method save of the class ProductServiceImpl finished its work
+2024-05-10T09:45:09.264+02:00  WARN 60444 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2024-05-10T09:45:16.710+02:00  INFO 60444 --- [http-nio-8080-exec-8] d.a.g_37_jp_shop.logging.AspectLogging   : Method getAll of the class ProductServiceInl was called
+2024-05-10T09:45:16.731+02:00  INFO 60444 --- [http-nio-8080-exec-8] d.a.g_37_jp_shop.logging.AspectLogging   : Method getAll of the class ProductServiceInl finished its work
+2024-05-10T09:45:26.605+02:00  INFO 60444 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-10T09:45:26.609+02:00  INFO 60444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-10T09:45:26.622+02:00  INFO 60444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
